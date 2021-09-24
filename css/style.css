@@ -1,0 +1,492 @@
+html {
+box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #fff;
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container{
+    width: 1200px;
+    padding: 0 45px;
+    margin: 0 auto;
+}
+
+#hero{
+    position: relative;
+    background-color: #004047;
+    padding:73px 0 250px 0 ;
+    background-image: url("../images/Group7.svg");
+    background-repeat: no-repeat;
+    background-size: 385px 100px;
+    background-position: right 165px bottom 0;
+}
+#hero::before{
+    content: '';
+    width: 100px;
+    height: 200px;
+    background-image:url("../images/Group8.svg");
+    position: absolute;
+    top: 250px;
+    left: 0px;
+
+}
+
+
+.hero__header{
+    width: 1110px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    margin-bottom: 133px;
+}
+
+.hero__logo{ 
+   
+    width: 160px;
+    margin-right: 60px;
+}
+
+.hero__list{
+    width: 140px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 577px;
+}
+
+.hero__item{
+    list-style: none;
+}
+
+.hero__link{
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;    
+}
+
+.hero__link:hover{
+    color: #f67e7e;
+}
+
+.hero__touch{
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+    padding: 9px 32px 11px 32px;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.hero__touch:hover{
+    background-color: #012f34;
+}
+
+.hero__touch:active{
+    background-color: #fff;
+    border: #004047;
+    color: #004047;
+}
+
+.hero__text{
+    width: 1110px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__title{
+    width: 635px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 100px;
+    line-height: 100px;
+    color: #fff;
+}
+
+.hero__spice{
+    color: #f67e7e;
+}
+
+.hero__line{
+    width: 50px;
+    height: 4px;
+    background-color: #79C8C7;
+    border-radius: 10px;
+}
+
+.hero__line:hover{
+    background-color: #f67e7e;
+}
+
+.hero__subtitle{
+    margin-top: 83px;
+    width: 445px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+}
+
+#team{
+    padding: 140px 0;
+    background-color: #012f34;
+    background-image: url("../images/Group8.png");
+    background-repeat: no-repeat;
+ 
+    background-position: right 0 bottom 0;
+}
+
+.team__box{
+    width: 1110px;
+    height: 404px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.team__line{
+    width: 50px;
+    height: 4px;
+    background-color: #f67e7e;
+    margin-bottom: 54px;
+    border-radius: 10px;
+}
+
+.team__line:hover{
+    background-color: #004047;
+}
+
+.team__title{
+    width: 445px;
+    font-family:" Livvic";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #fff;
+    margin-right: 125px;
+}
+
+.team__steps{
+    margin-top: 60px;
+}
+
+.step__title{
+    position: relative;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    color: #F67E7E;
+    margin:0 0 16px 95px;
+}
+
+.step__title::before{
+    content:"";
+    width: 72px;
+    height: 72px;
+    position: absolute;
+    left: -95px;
+   
+}
+
+.human::before{
+    background-image: url("../images/Group11.svg");
+}
+
+.setting::before{
+    background-image: url("../images/Group12.svg");
+}
+
+.mex::before{
+    background-image: url("../images/Group13.svg"); 
+}
+
+.step__subtitle{
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    margin: 0 0 32px 95px;
+}
+
+#story{
+    padding: 140px 0;
+    background: #004047;
+    background-image: url("../images/Group8Copy.svg");
+    background-repeat: no-repeat;
+    background-position: left 0 top 0;
+    position: relative;
+}  
+
+#story::before{        
+    content: '';
+    width: 150px;
+    height: 100px;
+    background-image: url('../images/Group53.svg');
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
+}
+.story__header{
+    width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story__title{
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 56px;
+}
+
+span{
+    color: #79C8C7;    
+}
+
+.story__list{
+    width: 1110px;
+    height: 313px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.story__item{
+    background-position: top  center;
+    background-image: url('../images/undov.svg');
+    background-repeat: no-repeat;
+    width: 350px;
+    list-style: none;
+}
+
+.coment__text{
+    margin-top: 36px;
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 24px;
+}
+
+.coment__title{
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #79C8C7;
+    margin-bottom: 3px;
+}
+
+.coment__subtitle{
+    font-family: "Livvic";
+    font-style: italic;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 32px;
+}
+
+.story__img{
+   
+    width: 62px;
+    height: 62px;
+    margin-left: 140px;
+}
+
+#contact{
+    padding: 76px 0;
+    background-color: #fc8686;
+    background-image: url("../images/Group8\(1\).svg");
+    background-repeat: no-repeat;
+    background-position: left 0 bottom 0 ;
+}
+
+.contact__box{
+    display: flex;
+    width: 917px;
+    height: 48px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__title{
+    font-family:"Livvic";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #012F34;
+    margin-right: auto;    
+}
+
+.contact__link{
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #012F34;
+    padding: 9px 32px 11px 32px;
+    border: 2px solid #012F34;
+    border-radius: 25px;
+    transition: 0.3s ease;
+}
+
+.contact__link:hover{
+    background-color: hsl(0, 100%, 72%);
+}
+
+.contact__link:active{
+    background-color: #fff;
+    border: #fff;
+}
+
+footer{
+    padding: 48px;
+    background-color: #012f34;
+}
+
+.footer{
+    width: 1110px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.footer__logo{
+    margin-right: 125px;
+}
+
+.footer__logo{
+    width: 160px;
+    margin-bottom: 25px;
+}
+
+.footer__list{
+    display: flex;
+}
+
+.footer__item{
+    list-style: none;
+    margin-right:40px ;
+}
+
+.footer__link{
+    font-family:" Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    color: #fff;
+}
+
+.footer__link:hover{
+    color: #f67e7e;
+}
+
+.adres__link{
+    font-family: "Livvic";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff; 
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+.footer__contact{
+    margin-right: auto;
+}
+
+.media__list{
+    margin-left: 151px;
+    display: flex;
+    margin-bottom: 51px;
+}
+
+.media__item{
+    list-style: none;
+}
+
+.media__icon{
+    font-size: 24px;
+    color: #fff;
+    margin-left: 16px;
+}
+
+.media__icon:hover{
+    color: #f67e7e;
+}
+
+.media__subtitle{
+    text-align: right;
+    font-family: Livvic;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: right;
+    color: #fff;
+    mix-blend-mode: normal;
+    opacity: 0.6;
+}
+
+
+
